@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: b4e534ba721026942a19a500ae9c81fe
-timeCreated: 1458074334
+guid: 6a5d4be2b3be7fd4dad97569e515c31e
+timeCreated: 1458611064
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: //RootNode
+    100000: bend1Handle
     100002: pCube1
     100004: pCube2
     100006: pCube3
@@ -15,8 +15,9 @@ ModelImporter:
     100014: pCube7
     100016: pCube8
     100018: Rails
-    100020: Wood
-    400000: //RootNode
+    100020: //RootNode
+    100022: Wood
+    400000: bend1Handle
     400002: pCube1
     400004: pCube2
     400006: pCube3
@@ -26,25 +27,24 @@ ModelImporter:
     400014: pCube7
     400016: pCube8
     400018: Rails
-    400020: Wood
-    2300000: //RootNode
-    2300002: pCube1
-    2300004: pCube2
-    2300006: pCube3
-    2300008: pCube4
-    2300010: pCube5
-    2300012: pCube6
-    2300014: pCube7
-    2300016: pCube8
-    3300000: //RootNode
-    3300002: pCube1
-    3300004: pCube2
-    3300006: pCube3
-    3300008: pCube4
-    3300010: pCube5
-    3300012: pCube6
-    3300014: pCube7
-    3300016: pCube8
+    400020: //RootNode
+    400022: Wood
+    2300000: pCube1
+    2300002: pCube2
+    2300004: pCube3
+    2300006: pCube4
+    2300008: pCube5
+    2300010: pCube6
+    2300012: pCube7
+    2300014: pCube8
+    3300000: pCube1
+    3300002: pCube2
+    3300004: pCube3
+    3300006: pCube4
+    3300008: pCube5
+    3300010: pCube6
+    3300012: pCube7
+    3300014: pCube8
     4300000: pCube1
     4300002: pCube2
     4300004: pCube3
@@ -53,15 +53,6 @@ ModelImporter:
     4300010: pCube6
     4300012: pCube8
     4300014: pCube7
-    6400000: //RootNode
-    6400002: pCube1
-    6400004: pCube2
-    6400006: pCube3
-    6400008: pCube4
-    6400010: pCube5
-    6400012: pCube6
-    6400014: pCube7
-    6400016: pCube8
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -89,7 +80,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
@@ -106,7 +97,7 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
-  importAnimation: 0
+  importAnimation: 1
   copyAvatar: 0
   humanDescription:
     human: []
@@ -121,7 +112,7 @@ ModelImporter:
     rootMotionBoneName: 
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

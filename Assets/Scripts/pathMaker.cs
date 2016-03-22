@@ -25,7 +25,9 @@ Else:
     Destroy self;
     */
 
-    public Transform floorPrefab;
+    public Transform tracksPrefab;
+    public Transform tracksLPrefab;
+    public Transform tracksRPrefab;
     public Transform pathMakerPrefab;
 
     private int counter = 0;
@@ -39,18 +41,23 @@ Else:
 
             if(randomNumber <0.25f)
             {
+                Instantiate(tracksRPrefab, this.transform.position, this.transform.rotation);
                 transform.localEulerAngles += new Vector3(0f, 90f, 0f);
             }
             else if (randomNumber >= 0.25f && randomNumber <=0.50f)
             {
+                Instantiate(tracksLPrefab, this.transform.position, this.transform.rotation);
                 transform.localEulerAngles -= new Vector3(0f, 90f, 0f);
             }
             else if (randomNumber >= 0.99f)
             {
                 Instantiate(pathMakerPrefab, this.transform.position, Quaternion.identity);
             }
+            else
+            {
+                Instantiate(tracksPrefab, this.transform.position, this.transform.rotation);
+            }
 
-            Instantiate(floorPrefab, this.transform.position, Quaternion.identity);
             transform.localPosition += transform.forward * 5f;
             counter++;
         }
